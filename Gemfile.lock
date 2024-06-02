@@ -1,3 +1,9 @@
+PATH
+  remote: ../muina
+  specs:
+    muina (0.3.0)
+      zeitwerk
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,14 +32,16 @@ GEM
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
     stringio (3.1.0)
+    zeitwerk (2.6.15)
 
 PLATFORMS
   arm64-darwin-22
   ruby
 
 DEPENDENCIES
-  irb (~> 1.13)
-  rspec (~> 3.13)
+  irb
+  muina!
+  rspec
 
 BUNDLED WITH
    2.5.7

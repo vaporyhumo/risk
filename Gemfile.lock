@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    risk (0.1.0)
+      muina (~> 0.4)
+      zeitwerk (~> 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -148,15 +155,14 @@ DEPENDENCIES
   guard-rubocop
   irb
   lefthook
-  muina
   rake
+  risk!
   rspec
   rubocop
   rubocop-performance
   rubocop-rake
   rubocop-rspec
   simplecov
-  zeitwerk
 
 BUNDLED WITH
    2.5.11

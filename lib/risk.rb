@@ -1,25 +1,23 @@
+# frozen_string_literal: true
+
+require 'muina'
+require 'farseer'
+require 'zeitwerk'
+loader = Zeitwerk::Loader::for_gem
+loader.setup
+
 module Risk
-  module_function
+  Maybe = Muina::Maybe
 
-  def read
-    gets.chomp 
+  def self.rep
+    Print.print(Eval.eval(Read.read))
   end
 
-  def eval(input)
-    input
-  end
-
-  def print(input)
-    puts input.inspect
-  end
-
-  def rep
-    print(eval(read))
-  end
-
-  def repl
+  def self.repl
     while true
       rep
     end
   end
 end
+
+loader.eager_load

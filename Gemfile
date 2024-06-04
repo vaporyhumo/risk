@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gemspec
 
@@ -11,6 +11,7 @@ gem 'guard-rspec'
 gem 'guard-rubocop'
 gem 'irb'
 gem 'lefthook'
+gem 'mutant-rspec'
 gem 'rake'
 gem 'rspec'
 gem 'rubocop'

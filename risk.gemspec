@@ -13,7 +13,7 @@ Gem::Specification::new do |spec|
   spec.description = 'Lisp language implemented in Ruby'
   spec.homepage    = 'https://github.com/vaporyhumo/risk'
 
-  spec.files       = Dir.glob("lib/**/*.rb") + ['README.md', 'LICENSE']
+  spec.files       = Dir.glob('lib/**/*.rb') + ['README.md', 'LICENSE']
 
   spec.required_ruby_version = Gem::Requirement::new('~> 3.1')
 
@@ -21,7 +21,7 @@ Gem::Specification::new do |spec|
   spec.metadata['changelog_uri']   = "#{spec.homepage}/blob/main/CHANGELOG.md"
   spec.metadata['rubygems_mfa_required'] = 'true'
 
-  spec.add_dependency 'farseer',  '~> 0.7'
+  spec.add_dependency 'farseer',  '~> 0.8'
   spec.add_dependency 'muina',    '~> 0.5'
   spec.add_dependency 'zeitwerk', '~> 2'
 end

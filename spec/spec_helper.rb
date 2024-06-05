@@ -3,6 +3,9 @@
 require 'simplecov' unless $PROGRAM_NAME.include?('bin/mutant')
 require 'risk'
 
+Maybe = Muina::Maybe
+Result = Farseer::Result
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

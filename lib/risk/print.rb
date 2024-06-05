@@ -2,8 +2,8 @@
 
 module Risk
   module Print
-    def self.print(input)
-      puts(input.unparse)
+    def self.print(input, io)
+      io.puts(input.unparse)
     end
 
     def self.unparse(input)

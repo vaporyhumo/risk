@@ -2,11 +2,12 @@
 
 module Risk
   module Read
-    def self.read
-      parse(gets.chomp)
+    def self.read(io)
+      parse(io.gets.chomp)
     end
 
-    def self.parse(input)
+    def self.parse(_input)
+      S.new
     end
   end
 end

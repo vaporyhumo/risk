@@ -5,6 +5,7 @@ require 'risk'
 
 Maybe = Muina::Maybe
 Result = Farseer::Result
+S = Risk::S
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

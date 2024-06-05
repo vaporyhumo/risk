@@ -11,14 +11,16 @@ module Risk
   Maybe  = Muina::Maybe
   Result = Farseer::Result
 
-  def self.rep
-    Print.print(Eval.eval(Read.read))
+  def self.rep(input, output)
+    Print.print(Eval.eval(Read.read(input)), output)
   end
 
   def self.repl
+    # :nocov:
     loop do
       rep
     end
+    # :nocov:
   end
 end
 

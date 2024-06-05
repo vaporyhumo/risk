@@ -4,6 +4,7 @@ module Risk
   class S
     def initialize(*nodes)
       @nodes = nodes.flatten.compact
+      freeze
     end
     attr_reader :nodes
 
@@ -14,14 +15,7 @@ module Risk
     def ==(other)
       self.class == other.class &&
         nodes.length == other.nodes.length &&
-        nodes.zip(other.nodes).all? { |a, b| a == b }
-
-    end
-
-    def flatten
-      if @nodes.length == 1
-        @nodes.first
-      end
+        nodes.zip(other.nodes).all? { |pair| pair.fetch(0) == pair.fetch(1) }
     end
   end
 end

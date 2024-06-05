@@ -19,3 +19,6 @@ gem 'rubocop-performance'
 gem 'rubocop-rake'
 gem 'rubocop-rspec'
 gem 'simplecov'
+gem 'farseer', path: '../farseer'
+
+gem "byebug", "~> 11.1"

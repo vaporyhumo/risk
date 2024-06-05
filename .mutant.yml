@@ -11,3 +11,9 @@ requires:
 matcher:
   subjects:
     - Risk*
+  ignore:
+    - Risk.rep
+    - Risk.repl
+
+mutation:
+  timeout: 1.0

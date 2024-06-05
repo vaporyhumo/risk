@@ -83,3 +83,9 @@ RSpec/AlignRightLetBrace:
 
 RSpec/Pending:
   Enabled: true
+
+Style/ColonMethodCall:
+  Enabled: false
+
+Style/LambdaCall:
+  EnforcedStyle: braces

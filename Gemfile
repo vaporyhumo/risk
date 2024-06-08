@@ -4,6 +4,5 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'lollipop'
 gem 'farseer', path: '../farseer'
-
+gem 'lollipop'

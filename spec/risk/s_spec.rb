@@ -8,7 +8,7 @@ RSpec.describe Risk::S do
 
     specify do
       s = described_class.new(['', nil])
-      
+
       expect(s.nodes).to eq ['']
     end
   end
@@ -17,19 +17,19 @@ RSpec.describe Risk::S do
     specify do
       s = described_class.new
 
-      expect(s.unparse).to eq "()"
+      expect(s.unparse).to eq '()'
     end
 
     specify do
       s = described_class.new(1)
 
-      expect(s.unparse).to eq "(1)"
+      expect(s.unparse).to eq '(1)'
     end
 
     specify do
       s = described_class.new(1, 2)
 
-      expect(s.unparse).to eq "(1 2)"
+      expect(s.unparse).to eq '(1 2)'
     end
   end
 

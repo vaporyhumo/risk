@@ -12,7 +12,7 @@ module Risk
   Result = Farseer::Result
 
   def self.rep(input, output)
-    Print.print(Eval.eval(Read.read(input)), output)
+    Print.print(Eval.eval(Read.read(input).value!), output)
   end
 
   def self.repl

@@ -21,7 +21,9 @@ Gem::Specification::new do |spec|
   spec.metadata['changelog_uri']   = "#{spec.homepage}/blob/main/CHANGELOG.md"
   spec.metadata['rubygems_mfa_required'] = 'true'
 
-  spec.add_dependency 'farseer',  '~> 0.8'
+  spec.add_dependency 'farseer',  '~> 0.9'
   spec.add_dependency 'muina',    '~> 0.5'
   spec.add_dependency 'zeitwerk', '~> 2'
+
+  spec.add_development_dependency 'lollipop', '~> 0.5'
 end

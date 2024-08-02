@@ -4,6 +4,9 @@ require:
   - rubocop-rake
   - rubocop-rspec
 
+inherit_gem:
+  rubocop-vaporyhumo: config.yml
+
 AllCops:
   NewCops: enable
 
@@ -14,15 +17,6 @@ Bundler/GemVersion:
 Gemspec/DependencyVersion:
   Enabled: true
   EnforcedStyle: required
-
-Layout/HeredocArgumentClosingParenthesis:
-  Enabled: true
-
-Layout/RedundantLineBreak:
-  Enabled: true
-
-Layout/SingleLineBlockChain:
-  Enabled: true
 
 Lint/HeredocMethodCallPosition:
   Enabled: true
